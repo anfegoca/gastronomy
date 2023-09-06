@@ -1,0 +1,6 @@
+h1 {
+  font-family: 'Domine';
+  text-align: center;
+  font-size: 48px; /* Tamaño de fuente */
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; /* Borde alrededor del texto */
+}

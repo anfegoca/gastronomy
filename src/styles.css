@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  background-image: url('assets/fondo.jpg');
+  background-size: cover; /* Para ajustar la imagen al tamaño de la ventana del navegador */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+  background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+  font-family: 'Playfair Display SC'
+  /* Puedes ajustar otros estilos según tus necesidades */
+}
+

@@ -1,0 +1,25 @@
+<app-barra-navegacion nombreMenu="{{cultura.nombre}}" opcion1="{{cultura.nombre}}" [op2]="true" opcion2="Productos" opcion3="Recetas"></app-barra-navegacion>
+<div class="container" data-bs-theme="dark">
+  <div class="row">
+    <div class="col-md-12"> <!-- Coloca la tarjeta en una columna que ocupe todo el ancho -->
+      <div class="card w-100"> <!-- Usa la clase w-100 para que la tarjeta ocupe todo el ancho -->
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="cultura.imagen" class="img-fluid rounded-start" alt="{{ cultura.nombre }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ cultura.nombre }}</h5>
+              <p class="card-text">{{ cultura.descripcion }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<app-lista-restaurantes></app-lista-restaurantes>
+
+
+

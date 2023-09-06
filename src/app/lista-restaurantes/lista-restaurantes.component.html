@@ -1,0 +1,9 @@
+<ol class="list-group list-group-numbered" data-bs-theme="dark">
+  <li class="list-group-item d-flex justify-content-between align-items-start" *ngFor="let restaurante of restaurantes">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">{{ restaurante.nombre }}</div>
+      {{ restaurante.ciudad }}, {{ restaurante.pais }}
+    </div>
+    <span class="badge bg-primary rounded-pill">{{ restaurante.estrellasMichelin }}</span>
+  </li>
+</ol>

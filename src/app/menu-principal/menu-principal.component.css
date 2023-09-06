@@ -1,0 +1,5 @@
+.link-custom {
+  color: white; /* Cambia "cream" al color deseado */
+  font-size: 24px; /* Tamaño de fuente */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Borde alrededor del texto */
+}

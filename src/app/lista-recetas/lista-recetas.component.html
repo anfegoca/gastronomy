@@ -1,0 +1,21 @@
+<app-barra-navegacion nombreMenu="Recetas referentes" opcion1=Recetas></app-barra-navegacion>
+<div class="accordion" id="accordionExample" data-bs-theme="dark">
+  <div class="accordion-item" *ngFor="let receta of recetas; let i = index">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + i" aria-expanded="false" [attr.aria-controls]="'collapse' + i">
+        {{ receta.nombre }}
+      </button>
+    </h2>
+    <div [id]="'collapse' + i" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading' + i" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <img [src]="receta.foto" alt="{{ receta.nombre }}" class="img-fluid mb-2">
+        <p class="fw-bold">Descripción:</p>
+        <p>{{ receta.descripcion }}</p>
+        <p class="fw-bold">Proceso de Preparación:</p>
+        <p>{{ receta.procesoPreparacion }}</p>
+        <iframe width="560" height="315" *ngIf="getVideoUrl(receta)" [src]="getVideoUrl(receta)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+

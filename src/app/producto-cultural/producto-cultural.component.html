@@ -1,0 +1,28 @@
+<app-barra-navegacion nombreMenu="Productos Culturales" opcion1=Productos></app-barra-navegacion>
+<div class="container" data-bs-theme="dark">
+  <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item" *ngFor="let producto of productos; let i = index" [class.active]="i === 0">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 36rem;">
+            <img [src]="producto.imagen" class="card-img-top" alt="{{ producto.nombre }}" style="width: 100%; height: auto;">
+            <div class="card-body">
+              <h5 class="card-title">{{ producto.nombre }}</h5>
+              <p class="card-text">{{ producto.descripcion }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
